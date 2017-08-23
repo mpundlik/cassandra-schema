@@ -8,7 +8,7 @@
 # Concept
 - Developer writes GO structures with metadata (field tags & helper methods)
 - SQL DDL scrips are generated from the GO structures
-- Connectivity to existing schema is needed to generate alter statements but tool needs to work also for generating new schema
+- Connectivity to existing schema is needed to generate alter statements but tool needs to work also without connecitivity (then it generates new schema with tables, UDTs etc.)
 
 # Iterations
 
