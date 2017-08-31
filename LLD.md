@@ -64,11 +64,11 @@ Input:
 Output:
 * DDL file (ALTER table/type...)
 
-Specifiation:
+Specification:
 * use grammar for DDL https://github.com/goccmack/gocc to generate GO binding/strucures to load DDL in memmory
   * Reuse/customize Cassandra DDL grammar 
     * https://github.com/stuartgunter/cql-grammar/blob/master/src/main/antlr4/org/stuartgunter/cql/CQL3.g4
     * https://cassandra.apache.org/doc/latest/cql/ddl.html?highlight=grammar 
 * load two DDL script in memmory (of course normalize lower/uppercase & whitespace)
-* calculate difference between DDLs (crate ALTER+CREATE statemens)
+* calculate difference between DDLs (create ALTER+CREATE statements)
 

@@ -1,5 +1,5 @@
 # Goals
-- Create tools that generates SQL DDL scripts for Cassandra according to [design](LLD.md)
+- Create tools that generate SQL DDL scripts for Cassandra according to [design](LLD.md)
 - Use generated SQL DDL scripts during upgrade procedure with one of following migration tools:
   - https://github.com/mattes/migrate/
   - https://github.com/db-journey/journey
@@ -26,5 +26,5 @@
 - Alter table/type statements
 
 ## Iteration 4 - integration & doc
-- shocase how all four tools work together during upgrade procedure (deploying new version of microservice)
+- showcase how all four tools work together during upgrade procedure (deploying new version of microservice)
 - describe everything in documentation with example/tutorial
