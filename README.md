@@ -1,6 +1,6 @@
 # Goals
-- Create tools that generates SQL DDL scripts for Cassandra
-- Use generated SQL DDL scripts in migration on of following migration tools:
+- Create tools that generates SQL DDL scripts for Cassandra according to [design](LLD.md)
+- Use generated SQL DDL scripts during upgrade procedure with one of following migration tools:
   - https://github.com/mattes/migrate/
   - https://github.com/db-journey/journey
 
