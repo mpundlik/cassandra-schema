@@ -12,15 +12,19 @@
 
 # Iterations
 
-## Iteration 1
+## Iteration 1 - struct -> DDL
 - Generating new schema (in this iteration there is no need to connect to existing cassandra schema because no alter statments are calulated yet)
 - Primary Keys
 - Default mapping for go types to cassandra types
 
-## Iteration 2
+## Iteration 2 - struct -> DDL
 - Indexes
 - UDTs
 - customizable mapping of go types to cassandra types using new GO structure field tags
 
-## Iteration 3
-- Alter table statements
+## Iteration 3 - diff DDLs
+- Alter table/type statements
+
+## Iteration 4 - integration & doc
+- shocase how all four tools work together during upgrade procedure (deploying new version of microservice)
+- describe everything in documentation with example/tutorial
