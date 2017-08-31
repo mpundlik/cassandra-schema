@@ -36,6 +36,24 @@ Input:
 Output
 * DDL file (CREATE IF NOT EXISTS table/type...)
 
+Specification:
+* export schema using 
+  * existing command line tools
+    * Alternative 1: gocqlsh https://medium.com/@adriagalin/import-and-export-keyspace-or-schema-in-cassandra-a7aa23c7092c
+    * Alternative 2: cassandra-cli https://dzone.com/articles/dumpingloading-schema
+  * custom implemenation (only if above is not really, really sufficient)
+    * Alternative 3: write new one using gocql
+  
+Alternative 1: 
+```
+cqlsh -e "DESCRIBE KEYSPACE test" > /your/path/test.cql
+```
+  
+Alternative 2:
+```
+echo -e "use your_keyspace;\r\n show schema;\n" | bin/cassandra-cli -h localhost > mySchema.cdl
+```
+
 ## diff-ddl
 Diff tool that is able to calculate ALTER statements from two DDL scripts.
 
