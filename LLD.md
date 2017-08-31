@@ -1,4 +1,4 @@
-#Low Level Design
+# Low Level Design
 
 Tools:
 * struct-to-ddl (GO struct -> DDL Create if not exists...)
@@ -39,7 +39,7 @@ Output
 Specification:
 * export schema using 
   * existing command line tools
-    * Alternative 1: gocqlsh https://medium.com/@adriagalin/import-and-export-keyspace-or-schema-in-cassandra-a7aa23c7092c
+    * Alternative 1: cqlsh https://medium.com/@adriagalin/import-and-export-keyspace-or-schema-in-cassandra-a7aa23c7092c
     * Alternative 2: cassandra-cli https://dzone.com/articles/dumpingloading-schema
   * custom implemenation (only if above is not really, really sufficient)
     * Alternative 3: write new one using gocql
@@ -63,3 +63,5 @@ Input:
 
 Output:
 * DDL file (ALTER table/type...)
+
+https://github.com/goccmack/gocc
