@@ -1,0 +1,21 @@
+dist: trusty
+sudo: required
+language: go
+
+go_import_path: github.com/ligato/cassandra-schema
+
+go:
+  - 1.8.x
+
+before_install:
+  - go get -v github.com/golang/lint/golint
+  - go get github.com/mattn/goveralls
+  - sudo apt-get install npm && npm install -g markdown-link-check
+
+script:
+  - make check_links || true
+  - make lint
+  - make
+
+after_success:
+  - goveralls -coverprofile=/tmp/coverage.out -service=travis-ci
