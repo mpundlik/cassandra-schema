@@ -10,6 +10,7 @@ DDL generater from go struct (enriched with metadata: tags, methods)
 
 Input:
 * go struct
+
 Output
 * DDL file (CREATE IF NOT EXISTS table/type...)
 
@@ -18,12 +19,12 @@ Specification:
 * struct-to-ddl will be called from golang project where go struct resides
 * go struct contains
    * fields tags:
-    * "ddl:" for specifying field types
-    * "pk:" for primary keys (single column or composite)
+     * "ddl:" for specifying field types
+     * "pk:" for primary keys (single column or composite)
    * methods for
-    * schema (keyspace) name
-    * table name
-    * indexes ...
+     * schema (keyspace) name
+     * table name
+     * indexes ...
 
 ## db-export-to-ddl
 DB schema export tool that is able to generate DDL from existing DB schema (keyspace).
@@ -31,6 +32,7 @@ DB schema export tool that is able to generate DDL from existing DB schema (keys
 Input:
 * Cassandra database endpoint
 * schemas
+
 Output
 * DDL file (CREATE IF NOT EXISTS table/type...)
 
@@ -40,5 +42,6 @@ Diff tool that is able to calculate ALTER statements from two DDL scripts.
 Input:
 * DDL 1 (output from struct-to-ddl)
 * DDL 2 (output from db-export-to-ddl)
-Output
+
+Output:
 * DDL file (ALTER table/type...)
