@@ -64,4 +64,6 @@ Input:
 Output:
 * DDL file (ALTER table/type...)
 
-https://github.com/goccmack/gocc
+Specifiation:
+* use grammar for DDL https://github.com/goccmack/gocc to generate GO binding/strucures to load DDL in memmory
+* load two DDL script in memmory and calculate difference
